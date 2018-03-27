@@ -1,0 +1,13 @@
+# OtelRezervasynSistemi
+Otel Rezervasyon Sistemi 
+ 
+İstenen rezervasyon sistemi, sisteme üye olan kullanıcıların otel odası rezervasyonu gerçekleştirebilecekleri bir yazılım sistemidir. Kullanıcıların işlem yapabilmesi için öncelikle sisteme üye olmaları gerekmektedir. Üyeler sisteme kendilerine ait ID ve şifre ile girdikten sonra kişisel bilgilerini güncelleyebilmeli, rezervasyon yaptırabilmeli, geçmiş rezervasyon bilgilerine ve rezervasyon isteklerinin sonuçlarına erişebilmelidirler. 
+ 
+Üyeler, rezervasyon isteğinde bulunduğunda kriterlerine uyan oteller ile iletişimi sistem sağlamaktadır. Örneğin otel odası rezervasyonu için üyeler (müşteriler) kalmak istedikleri şehri, otelin kalitesini yani yıldız sayısını (rank), oda başına ödemek istedikleri fiyat aralığını, oda özelliklerini ve rezervasyon için başlangıç bitiş tarihlerini belirtirler. Ardından kredi kartı bilgilerini sisteme yollarlar. Bu işlemlerden sonra üyeye rezervasyon isteğinin en geç 15 dakika sonra sonuçlanacağına dair bir mesaj iletilir. Bu verilen süre içerisinde sistem üyenin isteğine uyan her bir otele rezervasyon isteğini bildiren bir mesaj gönderir. Karşılığında oteller de sisteme rezervasyonu reddettiklerine ya da kabul edebileceklerine dair cevap mesajlarını gönderirler. Sistem onay gönderen otellerden kullanıcı tercihlerine en uygununu seçerek oda rezervasyonunu bu otelde gerçekleştirir. Üye ise sistem üzerinden rezervasyonun sonucunu öğrenmektedir. Rezervasyonu gerçekleşmişse hangi otelde kalacağı ve diğer rezervasyon bilgilerini elde etmektedir. 
+ 
+Rezervasyon için bu dokümanda belirtilmeyen özelliklerin projede belirlenmesi ve mümkün olduğunca çeşitlendirilmesi gerekmektedir. Örneğin otellerin sağladığı olanakların ve oda özelliklerinin uygun miras yapıları ile yer alması ve sistemi kullanacak üyelerin bu özellikler üzerinde seçim yapması istenmektedir. 
+ 
+Sistemin çalışma sırasında gerekli kontrolleri de sağlaması gerekmektedir. Örneğin kullanıcı belirtilen minimum günlük oda ücretinden daha az bir miktarı oda başına fiyat olarak girememeli veya kullanıcı kredi kartı bilgilerini verip onayladıktan sonra ilgili rezervasyon işlemini iptal etmemelidir. Çalışma zamanında gerçekleşebilecek istisnaların belirlenmesi ve işlem akışının kesilmeden devamını sağlamak amacıyla uygun istisna mekanizmalarının yazılım kodunda yer alması beklenmektedir. 
+ 
+Sisteme kayıtlı olan kullanıcıların ve otel kayıtlarının uygun dosya yapılarında sistemde saklanması ve sistem başlatıldığında bu dosyalar okunarak gerekli nesnelerin oluşturulup yukarıda tanımlanan işletim senaryolarının gerçekleştirilmesi beklenmektedir. Yazılımın tasarımı ve uygulaması sırasında iş parçacığı (thread) ve/veya ağ (network) yapılarından uygun olanları kullanılabilir. 
+ 
